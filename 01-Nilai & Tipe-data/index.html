@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipe data</title>
+</head>
+
+<body>
+    <!-- 
+        JavaScript memiliki tipe dinamis. Ini berarti variabel yang sama dapat digunakan untuk menampung tipe data yang berbeda:
+        var x;                                         // Now x is undefined
+        x = 5;                                         // Now x is a Number
+        x = "John";                                    // Now x is a String
+        =====================================================================================================================================
+        Pada Javascript kita dianjurkan menggunakan camelCase dalam penamaan.
+        Boleh-boleh saja menggunakan snake case atau underscore seperti ini:
+        var site_name = "Petani Kode";
+        var siteName = "Petani Kode";
+        =====================================================================================================================================
+        Untuk menampilkan isi variabel, kita bisa memanfaatkan fungsi-fungsi untuk menampilkan output seperti:
+
+        Fungsi console.log() menampilkan output ke console javascript;
+        Fungsi document.write() menampilkan output ke dokumen HTML;
+        Fungsi alert() menampilkan output ke jendela dialog.
+        =====================================================================================================================================
+        Tipe data pada javascript ada 6
+        1. number
+        JavaScript hanya memiliki satu jenis angka. Angka dapat ditulis dengan, atau tanpa desimal:
+
+        var x1 = 34.00;     // Written with decimals
+        var x2 = 34;        // Written without decimals
+
+        Angka ekstra besar atau ekstra kecil dapat ditulis dengan notasi ilmiah (eksponensial):
+        var y = 123e5;      // 12300000
+        var z = 123e-5;     // 0.00123
+        =====================================================================================================================================
+        2. string
+        String ditulis dengan tanda kutip. Anda dapat menggunakan tanda kutip tunggal atau ganda:
+
+        var carName1 = "Volvo XC60";   // Using double quotes
+        var carName2 = 'Volvo XC60';   // Using single quotes
+
+        JavaScript mengevaluasi ekspresi dari kiri ke kanan. Urutan yang berbeda dapat menghasilkan hasil yang berbeda:
+        var x = 16 + 4 + "Volvo"; hasil -> 20Volvo
+        var x = "Volvo" + 16 + 4; hasil -> Volvo164
+    
+        Saat menambahkan angka dan string, JavaScript akan memperlakukan angka tersebut sebagai string.
+        =====================================================================================================================================
+        3. boolean
+        Boolean hanya dapat memiliki dua nilai: trueatau false.
+
+        var x = 5;
+        var y = 5;
+        var z = 6;
+        (x == y)       // Returns true
+        (x == z)       // Returns false
+        =====================================================================================================================================
+        4. object
+        Objek JavaScript ditulis dengan tanda kurung kurawal {}. 
+        Properti objek ditulis sebagai pasangan nama: nilai, dipisahkan dengan koma.
+
+        var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+
+        Anda dapat mengosongkan objek dengan menyetelnya ke null:
+        var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+        person = null;    // Now value is null, but type is still an object
+        =====================================================================================================================================
+        5. function
+        =====================================================================================================================================
+        6. undefined
+        Dalam JavaScript, variabel tanpa nilai, memiliki nilai undefined. Jenisnya juga undefined.
+
+        var car;    // Value is undefined, type is undefined
+        Variabel apa pun dapat dikosongkan, dengan menyetel nilainya menjadi undefined. Jenisnya juga akan undefined.
+        car = undefined;    // Value is undefined, type is undefined
+
+        Anda juga dapat mengosongkan objek dengan menyetelnya ke undefined:
+        var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+        person = undefined;   // Now both value and type is undefined
+        =====================================================================================================================================
+        7. array
+        Array JavaScript ditulis dengan tanda kurung siku. Item array dipisahkan dengan koma.
+        Kode berikut mendeklarasikan (membuat) sebuah array yang dipanggil cars, berisi tiga item (nama mobil):
+
+        var cars = ["Saab", "Volvo", "BMW"];
+        =====================================================================================================================================
+        Data Primitif
+        Nilai data primitif adalah satu nilai data sederhana tanpa properti dan metode tambahan.
+
+        The typeofoperator dapat mengembalikan salah satu tipe primitif:
+
+        string
+        number
+        boolean
+        undefined
+
+        typeof "John"              // Returns "string"
+        typeof 3.14                // Returns "number"
+        typeof true                // Returns "boolean"
+        typeof false               // Returns "boolean"
+        typeof x                   // Returns "undefined" (if x has no value)
+        =====================================================================================================================================
+        The typeofoperator dapat kembali salah satu dari dua jenis kompleks:
+
+        function
+        object
+
+        The typeof pengembalian operator "objek" untuk objek, array, dan null.
+
+        The typeofoperator tidak kembali "objek" untuk fungsi.
+        
+    -->
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Javascript</title>
+</head>
+
+<body>
+    <h1>Object Javascript</h1>
+    <!--
+        Object javascript
+
+        Array itu object, tidak ada yang namanya tipe data array pada javascript yang ada hanya object
+
+        Object adalah sama seperti array yaitu dapat menampung / menyimpan kumpulan nilai , yang memiliki nama bukan index
+
+        Array adalah sebuah variabel yang lebih sakti
+        Object adalah array yang lebih sakti
+
+        Kenapa harus menggunakan object?
+
+        sintaks :
+        var mahasiswa = {
+            nama : 'irpan',
+            lulus : true,
+            ipSemester = [2.70 , 3.20 , 3.50 , 3.75 , 2.90 , 3.50 , 2.75 , 3.90],
+            ipkSemester : function() {
+                var total = 0;
+                var ips = this.ipSemester;
+                for(var i = 0; i < ips.length; i++) {
+                    total += ips[i];
+                }
+
+                return total / ips.length;
+            }
+        }
+
+        anatomi object :
+        1.  nama , lulus , ipSemester yang ada di dalam object mahasiswa itu disebut variabel yang ada di dalam object
+        2.  variabel yang ada di dalam object itu dinamakan dengan properti
+        3.  ipkSemester : function() ini disebut method yaitu function yang ada dalam object
+    -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>

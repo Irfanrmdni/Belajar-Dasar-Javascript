@@ -1,0 +1,112 @@
+	
+	
+	COMPILER VS INTERPRETER VS HYBRID
+
+	cara untuk menerjemahkan bahasa pemrograman (source code) ke dalam bahasa mesin agar bisa dijalankan
+	ada yang harus di compile menggunakan compiler dan ada yang harus menggunakan interprestasi menggunakan interpreter
+	
+	COMPILER = membuat source code -> mengcompile hasil source code tersebut menggunakan sebuah compiler -> menghasilkan file baru namanya exe (executable)
+	jadi ketika si A membuat program dan source code nya di compile menggunakan compiler kemudian si A memberikan file exe (hasil compiler) ke si B
+	dan si B hanya dapat melihat dan menjalankan program nya saja tanpa ada source code nya
+
+	KELEBIHAN :
+	- program hasil compile nya siap untuk dijalankan
+	- lebih cepat (jadi ketika di compile artinya sudah di terjemahkan ke bahasa mesin)
+	- source code tidak terlihat (karena yang dilihat atau dijalankan adalah hasil compile nya bukan source code nya)
+	KEKURANGAN :
+	- tidak lintas platform (tidak lintas sistem operasi)
+	- tidak flexsibel (karena ketika ingin memodifikasi ulang maka kita harus mengcompile ulang)
+
+	INTERPRETER = si A membuat source code -> si A menduplikat source code dan diberikan ke si B -> si B harus menggunakan interpreter untuk menerjemahkan
+	program nya si A -> lalu dia akan menjalankan interpreter nya sekaligus menjalankan program nya 
+	KELEBIHAN :
+	- lintas platform (bisa dijalankan / lintas di sistem operasi manapun)
+	- flexsibel (karena tidak di compile ulang jadi mudah untuk dimodifikasi)
+	- mudah untuk diuji
+	KEKURANGAN :
+	- butuh interpreter (misalnya javascript , javascript butuh interpreter untuk menjalankan source code nya)
+	- lebih lambat
+	- source code mudah diakses
+	
+	HYBRID = adalah teknik penggabungan antara kelebihan dari compiler dan interpreter (intermediated language) / byte code
+	jadi intermediated language ini sudah cross platform (bisa dijalankan di semua sistem)
+
+	jadi si A membuat source code -> si A mengcompile source code -> akan menghasilkan file IL (intermediated Language) / byte code 
+	-> si A mengirimkan file IL (intermediated Language) ke si B -> si B akan menjalankan file nya dengan Jit compilation
+	Jit compilation ini adalah melakukan compile sambil menjalankan programnya sekaligus
+
+	Bahasa yang menggunakan COMPILER :
+	C/C++ Objective-C
+	
+	Bahasa yang menggunakan INTERPRETER :
+	Javascript PHP
+
+	Bahasa yang menggunakan HYBRID :
+	Java Phyton
+
+	============================================================================================================================================================
+
+	KENAPA BELAJAR JAVASCRIPT
+	1. Gratis
+	2. Tidak perlu instalasi
+	3. Hanya butuh web browser 
+	
+	-> Merupakan bahasa scripting (dibuat untuk berinteraksi di halaman web) / spesifik untuk web
+
+	-> Merupakan bahasa untyped (kategori bahasa pemrograman ada 2 yaitu typed dan untyped), jadi jika membuat variabel di bahasa pemrograman untyped
+	   itu variabelnya bisa di isi dengan tipe data yang berbeda
+
+	-> Merupakan interpreted jadi bahasa pemrograman yang harus dijalankan menggunakan interpreted (web browser)
+	
+	contoh untyped :
+	var x = 12345;
+	    x = "hello world";
+	    x = {hello: "world"};
+
+	contoh typed :
+	int x = 12345;
+
+	============================================================================================================================================================
+
+	APA SAJA YANG BISA DIBUAT DENGAN JAVASCRIPT
+	1. Client-side web development = yaitu pembangunan/pembuatan aplikasi yang berjalan pada tampilan (front end)
+
+	- Native javascript / vanilla javascript (Bahasa native yaitu bahasa biasa tanpa library & frameworks)
+	- JQuery (Frameworks javascript)
+	- Angular
+	- React
+	- Ember
+	- Backbone
+	
+	2. Server-side development = yaitu pembangunan/pembuatan aplikasi yang berjalan pada sisi server (back end)
+	
+	- NodeJS (Library javascript)
+	- ExpressJS (Frameworks javascript)
+
+	3. JSON (Javascript object notation) -> format data
+	yang digunakan untuk pertukaran data dimana-mana
+	
+	============================================================================================================================================================
+	NILAI PADA JAVASCRIPT
+
+	Nilai nilai pada javascript menyimpan nilai true atau false
+	Ini disebut dengan nilai truthy dan falsy
+	
+	Truthy -> true , non-zero number , "string" , object , arrays , functions
+	Falsy -> false , 0 , "" , undefined , null , NaN
+	
+	Undefined (atau tidak terdefinisi) adalah sebuah variabel yang tidak mempunyai nilai misalnya var x , var a
+	Null adalah nilai kosong misalnya var x = null , var a = null
+	============================================================================================================================================================
+	APA ITU CONSOLE.LOG();
+
+	Console.log(); adalah untuk menuliskan sesuatu ke dalam console di browser 
+	============================================================================================================================================================
+	PERBEDAAN == DAN ===
+	
+	== adalah operator pembandingan
+	=== adalah pembandingan identitas
+	============================================================================================================================================================
+	APA ITU PARSEINT
+
+	Parseint adalah untuk mengubah nilai apapun menjadi tipe data int

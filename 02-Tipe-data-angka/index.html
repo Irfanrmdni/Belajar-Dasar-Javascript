@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipe data angka</title>
+</head>
+
+<body>
+    <!-- 
+        Tipe data angka
+        -   Didalam javascript tipe data angka tidak mempunyai integer (int) / bilangan bulat
+        -   Yang ada hanya floating point / bilangan pecahan ukuran yang bisa ditampung adalah 64-bit
+        -   Angka Yang bisa disimpan di javascript : 
+            Angka tanpa desimal / bilangan bulat (int) , maximal 15 digit -> 12 100 2000 194 12345
+            Angka dengan desimal / pecahan (float) harus pakai titik (.) jangan koma (,), maximal 17 digit -> 3.14 123.42 0.7 55.6
+            Angka eksponen ditulis dengan huruf e (sama dengan angka 0) -> 12e5 = 1200000 (angka 0 ada 5) 40e2 = 4000 
+            Angka negatif
+            Angka spesial : infinity , -infinity dan NaN (Not a Number) -> 2 / 0 = infinity , -2 / 0 = -infinity , 0 / 0 = NaN  
+
+            pembagian angka:
+            1 Bit untuk angka penanda bilangan negatif
+            11 Bit untuk angka bilangan eksponen
+            52 Bit untuk angka sebenarnya (pecahan/desimal dan lain-lain)
+
+        Warning: 
+        -   jangan pernah menulis awal angka 0 di javascript karena dengan menulis angka 0 diawal maka dianggap bilangan oktal
+        -   Jangan pernah menulis awal angka 0x di javascript karena dengan menulis angka 0 diawal maka dianggap bilangan hexadesimal
+        -   Ketika melakukan operasi aritmatika dengan menggunakan string yang isinya angka 
+            misalnya 100 / "10" = 10 -> ini akan diproses sebagai angka
+    -->
+
+</body>
+
+</html>

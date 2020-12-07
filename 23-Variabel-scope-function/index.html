@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variabel Scope Function</title>
+</head>
+
+<body>
+    <h1>Variabel scope function</h1>
+    <!--
+        Variabel scope function
+        Di javascript tidak memakai block scope tetapi memakai function scope
+        
+        Name conflict adalah variabel yang memiliki nama yang sama tetapi memiliki block yang berbeda
+
+        Jenis scope ada 2:
+        1. block scope
+        contoh :
+
+        i = 2;
+
+        if( i % 2 = 0) { -> tanda kurung kurawal memulainya block scope
+            bool genap = true; -> ini adalah block scope
+
+        }-> tanda kurung kurawal penutup block scope
+
+        if(genap) { -> genap ini akan error karena program tidak mengenal genap, karena bool genap itu block scope
+            printf('genap!')
+        }
+
+        2. function scope
+    -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parameter dan Argumen function</title>
+</head>
+
+<body>
+    <h1>Parameter dan argumen function</h1>
+    <!--
+        Parameter dan Argumen Function
+
+        1. Parameter :
+        adalah variabel yang ditulis didalam kurung pada saat function dibuat, digunakan untuk menampung nilai
+        yang dikirimkan pada saat function dipanggil
+
+        2. Argument :
+        nilai yang dikirimkan ke parameter saat fungsi dipanggil
+
+        contoh :
+        function tambah(a, b) { -> a dan b ini adalah parameter
+            return a + b;
+        }
+
+        var coba = tambah(2,4)  -> 2 dan 4 ini adalah argument
+
+        bagaimana jika parameter dan argumen nya tidak sesuai ? contoh nya parameter 2 dan argumen nya 1
+        1. jika parameter nya lebih sedikit dari argumen nya maka argumen kelebihan nya akan di abaikan
+        contoh : function tambah(a, b) {    -> memiliki parameter 2
+            return a + b;
+        }
+
+        var coba = tambah(10, 20, 30)       -> memiliki argumen 3
+
+        maka argumen yang kelebihan nya atau 30 akan di abaikan
+
+        2. jika parameter nya lebih banyak dari argumen maka parameter kelebihan nya akan di isi dengan nilai undefined / default
+        contoh : function tambah(a, b, c) {    -> memiliki parameter 3
+            return a + b;
+        }
+
+        var coba = tambah(10, 20)       -> memiliki argumen 2
+
+        maka parameter yang kelebihan nya atau c akan undefined
+
+        arguments -> adalah sebuah variabel khusus , ini variabel semu atau sebetulnya ada tetapi tidak diperlihatkan
+        ini berisi nilai yang dikirimkan saat fungsi dipanggil
+        contoh :
+        contoh : function tambah(a, b, c) {    -> memiliki parameter 3
+            return a + b;
+        }
+
+        var coba = tambah(10, 20, 'hello', false)       -> memiliki argumen 4
+
+        arguments = tipe nya array
+        ini akan ditampung kedalam sebuah variabel yang tipenya array dan memiliki indeks
+        arguments = [10, 20, 'hello', false]
+    -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>
