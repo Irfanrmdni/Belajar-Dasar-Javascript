@@ -1,6 +1,6 @@
 // contoh 1
 // 1. menambah data array
-var arr = ['a' , 1 , false];
+var arr = ['a', 1, false];
 // memanggil semua array
 console.log(arr)
 // memanggil salah satu array
@@ -29,27 +29,27 @@ console.log(a);
 
 // contoh 3 -> menghapus isi array
 // 1. membuat data array
-var nama = ['asep' , 'jajang' , 'umar' , 'nela'];
+var nama = ['asep', 'jajang', 'umar', 'nela'];
 // menghapus nilai array 
 nama[1] = undefined; // -> contoh menghapus isi array pada index ke 1
 // memanggil array
 console.log(nama);
 
 // contoh 4 -> menampilkan array dengan looping
-var hobi = ['ngopi' , 'sholawat' , 'sholat' , 'makan'];
+var hobi = ['ngopi', 'sholawat', 'sholat', 'makan'];
 // membuat looping
-for(var i = 0; i < hobi.length; i++) {
-    console.log('hobi ke-'+ i + ' : ' + hobi[i]);
+for (var i = 0; i < hobi.length; i++) {
+    console.log('hobi ke-' + i + ' : ' + hobi[i]);
 }
 
 // Contoh 5 -> menggunakan method join
-var tipeHP = ['samsung' , 'xiaomi' , 'iphone' , 'vivo' , 'oppo' , 'realme'];
+var tipeHP = ['samsung', 'xiaomi', 'iphone', 'vivo', 'oppo', 'realme'];
 // memanggil nilai array dengan menggunakan method join
 console.log(tipeHP.join()); // -> ini default nya menggunakan pemisah (,) koma
 console.log(tipeHP.join(' - ')); // -> diganti dengan (-)
 
 // contoh 6 -> menggunakan method push / menambah di akhir elemen
-tipeHP.push('advan' , 'infinix' ,'lg'); // -> menambahkan nilai/data baru ke array , ini bisa lebih dari satu
+tipeHP.push('advan', 'infinix', 'lg'); // -> menambahkan nilai/data baru ke array , ini bisa lebih dari satu
 // memanggil array
 console.log(tipeHP.join(' '));
 
@@ -62,7 +62,7 @@ tipeHP.pop(); // -> menghapus nilai akhir dari array , ini hany bisa satu per sa
 console.log(tipeHP.join(' '));
 
 // contoh 8 -> menggunakan method unshift / menambah di awal elemen
-tipeHP.unshift('Asus' , 'Motorola');
+tipeHP.unshift('Asus', 'Motorola');
 // memanggil array
 console.log(tipeHP.join(' '));
 
