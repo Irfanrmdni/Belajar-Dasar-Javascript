@@ -61,7 +61,7 @@ pilihan.forEach(function (pil) {
             const imgComputer = document.querySelector('.img-komputer');
             // menampilkan gambar pilihan computer
             imgComputer.setAttribute('src', 'img/' + pilihComputer + '.png');
-            // mengangkap elemen div attribute info
+            // menangkap elemen div attribute info
             const info = document.querySelector('.info');
             // mengganti/menyisipkan isi/text elemen div attribute info
             info.innerHTML = hasil;
