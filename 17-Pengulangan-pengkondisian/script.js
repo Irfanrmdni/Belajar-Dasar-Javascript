@@ -46,76 +46,76 @@ var gg = '';
 
 // loop 1
 console.log('loop 1');
-for(var a = 1; a <= 10; a++) {
+for (var a = 1; a <= 10; a++) {
     aa += '*';
     console.log(aa);
-} 
+}
 
 // loop 2
 console.log('loop 2');
-for(var b = 1; b <= 10; b++) {
-    for(var c = 1; c <= b; c++) {
+for (var b = 1; b <= 10; b++) {
+    for (var c = 1; c <= b; c++) {
         bb += '*';
     }
     bb += '\n';
 }
-console.log(bb); 
+console.log(bb);
 
 // loop 3
 console.log('loop 3');
-for(var d = 10; d >= 1; d--) {
+for (var d = 10; d >= 1; d--) {
     console.log(cc + d);
-} 
+}
 
 // loop 4
 console.log('loop 4');
-for(var e = 10; e >= 1; e--) {
-    for(var f = 1; f <= e; f++) {
+for (var e = 10; e >= 1; e--) {
+    for (var f = 1; f <= e; f++) {
         dd += '-';
     }
-        for(var g = e; g <= 10; g++) {
-            dd += '*';
-        }
+    for (var g = e; g <= 10; g++) {
+        dd += '*';
+    }
 
     dd += '\n';
 }
-console.log(dd); 
+console.log(dd);
 
 // loop 5
 console.log('loop 5');
-for(var h = 1; h <= 10; h++) {
-    for(var l = 1; l <= h; l++) {
+for (var h = 1; h <= 10; h++) {
+    for (var l = 1; l <= h; l++) {
         ee += '-';
     }
-        for(var n = 10; n >= h; n--) {
-            ee += '*';
-        }
+    for (var n = 10; n >= h; n--) {
+        ee += '*';
+    }
 
     ee += '\n';
 }
-console.log(ee); 
+console.log(ee);
 
 // loop 6
 console.log('loop 6');
-for(var o = 1; o <= 10; o++) {
-    for(var q = 10; q >= o; q--) {
+for (var o = 1; o <= 10; o++) {
+    for (var q = 10; q >= o; q--) {
         ff += '-';
     }
-    for(var r = 1; r <= o; r++) {
+    for (var r = 1; r <= o; r++) {
         ff += '*';
     }
 
     ff += '\n';
 }
-console.log(ff); 
+console.log(ff);
 
 // loop 7
 console.log('loop 7');
-for(var i = 1; i <= 10; i++) {
-    for(var j = 10; j >= i; j--) {
+for (var i = 1; i <= 10; i++) {
+    for (var j = 10; j >= i; j--) {
         gg += '-';
     }
-    for(var k = 1; k <= (2*i-1); k++) {
+    for (var k = 1; k <= (2 * i - 1); k++) {
         gg += '*';
     }
     gg += '\n';
