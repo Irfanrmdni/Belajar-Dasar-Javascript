@@ -131,3 +131,18 @@
 //         elemen.target.style.display = 'none';
 //     });
 // });
+
+const close = document.querySelectorAll('.close');
+close.forEach(function (e) {
+    e.addEventListener('click', function (elemen) {
+        elemen.target.parentElement.style.display = 'none';
+        elemen.stopPropagation();
+    });
+});
+
+const card = document.querySelectorAll('.card');
+card.forEach(function (e) {
+    e.addEventListener('click', function () {
+        alert('ok');
+    });
+});
