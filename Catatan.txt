@@ -110,3 +110,10 @@
 	APA ITU PARSEINT
 
 	Parseint adalah untuk mengubah nilai apapun menjadi tipe data int
+
+	============================================================================================================================================================
+
+	DOM Event ClassName
+
+	Ketika menyelksi className jika yang diseleksi itu mempunyai lebih dari 1 class maka kita harus seleksi semua className
+	tersebut agar dapat berjalan
