@@ -156,4 +156,4 @@ $.ajax({
     }
 });
 
-console.log('selesai');
+console.log('selesai'); 
