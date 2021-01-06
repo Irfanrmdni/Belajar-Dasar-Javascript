@@ -100,7 +100,7 @@ function success(results) {
     // console.log(JSON.parse(results));
 
     // tapi kita mau mengambil hanya nama nya saja
-    const mhs = JSON.parse(results);
+    // const mhs = JSON.parse(results);
     mhs.forEach((m) => console.log(m.nama));
 }
 
