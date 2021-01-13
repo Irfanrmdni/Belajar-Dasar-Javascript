@@ -1,0 +1,411 @@
+/* reset start */
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    outline: none;
+    border: none;
+}
+
+/* reset end */
+
+/* scrollbar custom start */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 0;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #dedede;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+/* scrollbar custom end */
+
+html {
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+
+/* navbar start */
+nav.navbar {
+    width: 100%;
+    height: 70px;
+    padding: 0 8%;
+    background-color: rgb(26, 25, 25);
+    color: white;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    -ms-flex-align: center;
+    text-transform: uppercase;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+}
+
+.navbar-brand i {
+    font-size: 2.5rem;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.navbar-brand i:hover {
+    color: rgb(241, 221, 37);
+}
+
+.hamburger i {
+    display: none;
+}
+
+nav.navbar ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav.navbar li:not(:last-child) {
+    margin-right: 45px;
+}
+
+nav.navbar a.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    background-color: white;
+    color: rgb(26, 25, 25);
+    border-radius: 8px;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+nav.navbar a.btn:hover {
+    background-color: rgb(241, 221, 37);
+    color: rgb(26, 25, 25);
+}
+
+nav.navbar a {
+    color: white;
+    font-size: 0.8rem;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+nav.navbar a:hover {
+    color: rgb(241, 221, 37);
+}
+
+
+
+/* navbar end */
+
+.container {
+    position: relative;
+    top: 70px;
+    padding: 0 8%;
+    margin: 0 auto;
+}
+
+/* header start */
+header.headers {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+    padding-top: 25px;
+}
+
+header.headers .header {
+    display: -ms-grid;
+    display: -moz-grid;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-column-align: center;
+    align-items: center;
+    justify-content: space-between;
+    -webkit-transition: all .6s ease-in-out;
+    opacity: 1;
+    transition: all .6s ease-in-out;
+}
+
+.hero-img {
+    order: 2;
+}
+
+.hero-img img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.caption {
+    order: 1;
+}
+
+.caption h1 {
+    font-size: 2.2rem;
+    line-height: 50px;
+}
+
+.caption p {
+    font-size: 1.2rem;
+    line-height: 30px;
+    margin: 25px 0;
+}
+
+.caption a {
+    display: inline-block;
+    padding: 15px 40px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    background-color: rgb(26, 25, 25);
+    color: white;
+    border-radius: 8px;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.caption a:hover {
+    background-color: rgb(241, 221, 37);
+    color: rgb(26, 25, 25);
+}
+
+.circles {
+    margin: 40px auto;
+}
+
+span.circle {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: rgb(26, 25, 25);
+    -webkit-transition: all .6s ease-in-out;
+    transition: all .6s ease-in-out;
+}
+
+.activeCircle {
+    background-color: rgb(214, 195, 21) !important;
+}
+
+span.circle:not(:last-child) {
+    margin-right: 20px;
+}
+
+
+
+/* header end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* mobile */
+@media screen and (max-width: 767px) {
+
+    /* navbar start */
+    nav.navbar ul {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-align: center;
+        align-items: center;
+        justify-content: space-around;
+        position: fixed;
+        height: 70%;
+        width: 100%;
+        top: 0;
+        right: 0;
+        background-color: rgb(26, 25, 25);
+        z-index: -100;
+        -webkit-transform: translate(-100%);
+        transform: translateY(-100%);
+        opacity: .5;
+        -webkit-transition: all .6s ease-in-out;
+        transition: all .6s ease-in-out;
+    }
+
+    nav.navbar ul.slide {
+        -webkit-transform: translate(69px);
+        transform: translateY(69px);
+        border-top: solid 2px rgb(241, 221, 37);
+        border-radius: 0 0 20px 20px;
+        opacity: 1;
+    }
+
+    nav.navbar li:not(:last-child) {
+        margin-right: 0;
+    }
+
+    .hamburger i {
+        display: block;
+        font-size: 25px;
+    }
+
+    .navbar-brand i {
+        font-size: 2rem;
+    }
+
+    nav.navbar a.btn {
+        padding: 10px 120px;
+    }
+
+    nav.navbar a {
+        color: rgb(255, 255, 255);
+        font-size: 0.8rem;
+    }
+
+    /* navbar end */
+
+
+    header.headers {
+        height: auto;
+    }
+
+    .hero-img {
+        order: 1;
+        grid-column: span 2;
+    }
+
+    .caption {
+        order: 3;
+        grid-column: span 2;
+        text-align: center;
+    }
+
+    .caption h1 {
+        font-size: 1.5rem;
+        line-height: 35px;
+    }
+
+    .caption p {
+        font-size: 1rem;
+        line-height: 28px;
+        margin: 25px 0;
+    }
+
+    .caption a {
+        display: inline-block;
+        padding: 14px 90px;
+        font-size: 0.7rem;
+    }
+
+    span.circle {
+        width: 15px;
+        height: 15px;
+    }
+
+    span.circle:not(:last-child) {
+        margin-right: 15px;
+    }
+
+}
+
+
+/* tablet */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    /* navbar start */
+    nav.navbar li:not(:last-child) {
+        margin-right: 24px;
+    }
+
+    nav.navbar a.btn {
+        padding: 10px 20px;
+        font-size: 0.7rem;
+    }
+
+    nav.navbar a {
+        color: rgb(255, 255, 255);
+        font-size: 0.7rem;
+    }
+
+    /* navbar end */
+
+    /* header start */
+    .caption h1 {
+        font-size: 1.5rem;
+        line-height: 35px;
+    }
+
+    .caption p {
+        font-size: 0.9rem;
+        line-height: 25px;
+        margin: 20px 0;
+    }
+
+    .caption a {
+        display: inline-block;
+        padding: 15px 40px;
+        font-size: 0.8rem;
+        cursor: pointer;
+        background-color: rgb(26, 25, 25);
+        color: white;
+        border-radius: 8px;
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+    }
+
+    /* header end */
+}
