@@ -1,4 +1,5 @@
+var jmlAngkot = 10;
 
-for(var noAngkot = 1; noAngkot <= 10; noAngkot++){
+for (var noAngkot = 1; noAngkot <= jmlAngkot; noAngkot++) {
     console.log('angkot No. ' + noAngkot + ' sedang tidak beroperasi');
 }

@@ -26,11 +26,11 @@ console.log(angka);
 console.log(typeof angka + ' <- Sesudah\n\n');
 
 // array to string
-angka = [1,2,3,4,5];
+angka = [1, 2, 3, 4, 5];
 console.log(angka);
 console.log(typeof angka + ' <- Sebelum');
 
-angka = String([1,2,3,4,5]);
+angka = String([1, 2, 3, 4, 5]);
 console.log(angka);
 console.log(typeof angka + ' <- Sesudah\n\n');
 

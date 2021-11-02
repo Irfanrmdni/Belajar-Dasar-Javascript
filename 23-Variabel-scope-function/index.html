@@ -15,6 +15,8 @@
         
         Name conflict adalah variabel yang memiliki nama yang sama tetapi memiliki block yang berbeda
 
+        global scope disebut juga windows scope
+
         Jenis scope ada 2:
         1. block scope
         contoh :
@@ -31,6 +33,20 @@
         }
 
         2. function scope
+        contoh :
+
+        i = 2;
+
+        if( i % 2 = 0) { -> tanda kurung kurawal memulainya block scope
+            bool genap = true; -> ini adalah block scope
+
+        }-> tanda kurung kurawal penutup block scope
+
+        if(genap) { -> 
+            printf('genap!')
+        }
+
+        ini tidak akan terjadi error karna ini disebut funtional scrope
     -->
 
     <script src="script.js"></script>

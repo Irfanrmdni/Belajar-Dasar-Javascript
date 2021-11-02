@@ -12,9 +12,17 @@ while(ulang) {
 } */
 
 // Pengulangan yang dihentikan oleh program increment 
-var nilaiAwal = 1;
+// var nilaiAwal = 1;
 
-while(nilaiAwal <= 10) {
-    console.log('Hello World! ' + nilaiAwal);
-    nilaiAwal++;
+// while(nilaiAwal <= 10) {
+//     console.log('Hello World! ' + nilaiAwal);
+//     nilaiAwal++;
+// }
+
+let ulangi = 1;
+
+while (ulangi <= 10) {
+    console.log(`hello world! ${ulangi}x`);
+    ulangi++;
 }
+

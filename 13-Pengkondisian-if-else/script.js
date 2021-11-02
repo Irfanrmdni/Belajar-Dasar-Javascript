@@ -1,7 +1,8 @@
 var angka = prompt('Masukan angka: ');
 
-if(angka % 2 == 0){
+if (angka % 2 == 0) {
     alert(angka + ' adalah bilangan genap');
-}else{
+} else {
     alert(angka + ' adalah bilangan ganjil')
 }
+

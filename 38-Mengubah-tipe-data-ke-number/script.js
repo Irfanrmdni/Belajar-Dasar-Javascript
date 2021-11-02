@@ -12,7 +12,7 @@ console.log(angka);
 console.log(typeof angka + ' <- Sesudah\n\n');
 
 angka = Number('18.459'); // akan menjadi angka decimal 
-console.log(angka.toFixed()); 
+console.log(angka.toFixed());
 console.log(typeof angka + ' <- Sesudah\n\n');
 
 angka = Number('18.4532'); // akan menjadi angka float/double/koma

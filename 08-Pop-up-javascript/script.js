@@ -6,7 +6,7 @@
 // var nama = prompt('Masukan nama lengkap :');
 
 // output dari inputan prompt yang disimpan ke alert
-// alert(nama);
+// alert('nama yang anda masukan ' + nama);
 
 // output dari inputan prompt yang disimpan ke confirm
 // confirm(nama);
@@ -14,10 +14,10 @@
 // output dari inputan prompt yang disimpan ke console
 // console.log(nama);
 
-// confirm('Kamu yakin gak sama aku? '); 
+// confirm('Kamu yakin gak sama aku? ');
 
 // contoh 01 - output untuk konfirmasi jika ditekan ok akan muncul true dan jika ditekan cancel akan false
-// var konfirmasi = confirm('Kamu yakin gak sama aku? '); 
+// var konfirmasi = confirm('Kamu yakin gak sama aku? ');
 // alert(konfirmasi);
 
 // contoh 02 dengan IF - output untuk konfirmasi jika ditekan ok akan muncul true dan jika ditekan cancel akan false
@@ -25,22 +25,34 @@
 
 if (konfir === true) {
     alert('Login berhasil!');
-}else {
+} else {
     alert('Login gagal!');
 } */
 
 // Contoh program sederhana dengan menggabungkan alert prompt dan confirm
 
-alert('Selamat datang..');
+// alert('Selamat datang..');
 
-var lanjut = true;
+// var lanjut = true;
 
-while(lanjut) {
+// while(lanjut) {
 
-    var nama = prompt('Masukan nama lengkap anda: ');
-    alert('Halo..' + nama);
+//     var nama = prompt('Masukan nama lengkap anda: ');
+//     alert('Halo..' + nama);
 
-    lanjut = confirm('ingin melanjutkan?...');
+//     lanjut = confirm('ingin melanjutkan?...');
+// }
+
+// alert('terimakasih...');
+
+alert('selamat datang :)');
+var x = true
+
+while (x) {
+    var nama = prompt('masukan nama : ');
+
+    alert('halo ' + nama);
+    x = confirm('lagi gak ?');
 }
 
-alert('terimakasih...');
+alert('terimakasih');
